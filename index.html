@@ -1,1 +1,393 @@
+<!doctype html>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SplitEasy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/.png" alt="Logo">
+</head>
+
+<body class="background">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-xxl">
+            <a class="navbar-brand me-auto" href="#">
+                <img src="images/spliteasy" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                <span class="text-split">Split</span><span class="text-easy">Easy</span>
+            </a>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/foodheaven" alt="Logo" width="30" height="24"
+                            class="d-inline-block align-text-top">
+                        <span class="text-food">Split</span><span class="text-heaven">Easy</span>
+                    </a>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#acerca">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#servicios">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#comofunciona">¿Cómo funciona?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#precios">Precios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#reseñas">Reseñas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="#contactanos">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="login-button">Iniciar Sesión</a>
+            <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container d-flex align-items-center justify-content-center fs-1
+        text-white flex-column">
+            <h3 class="text-center">En SplitEasy, sabemos lo importante que es llevar una vida financiera equilibrada.
+                Nuestro sistema te permite dividir y gestionar los gastos de manera equitativa entre los miembros del
+                hogar, sin complicaciones ni discusiones. Divide los gastos proporcionalmente, según los ingresos de
+                cada uno, y lleva un control eficiente y justo para todos.</h3>
+            <p>¡Haz de la gestión financiera algo fácil y justo para todos en casa!</p>
+            <a href="#" class="signin-button">Registrate</a>
+        </div>
+    </section>
+
+    <!-- Acerca De Section -->
+    <section class="container mt-5" id="acerca">
+        <div class="row text-center">
+            <h1 class="center">Acerca De</h1>
+            <div class="col-md-6">
+                <h2>Misión</h2>
+                <p>Nuestra misión es facilitar la gestión financiera del hogar mediante una herramienta digital que
+                    distribuye los gastos comunes de manera proporcional a los ingresos de cada miembro, promoviendo la
+                    equidad, la transparencia y la armonía en la convivencia.</p>
+
+                <h2>Visión</h2>
+                <p>Nuestra visión es convertirnos en la plataforma líder en gestión financiera compartida para hogares
+                    en
+                    América Latina, siendo reconocidos por empoderar a las personas a tomar decisiones económicas
+                    justas,
+                    responsables y colaborativas.</p>
+
+                <h2>¿Por qué nace SplitEasy?</h2>
+                <p>SplitEasy surge de la necesidad de muchas familias y grupos de convivencia que enfrentan dificultades
+                    al
+                    repartir gastos de manera justa. La plataforma responde a una problemática común: la falta de
+                    claridad y
+                    equidad financiera en los hogares, especialmente cuando los ingresos son desiguales. Con SplitEasy,
+                    buscamos eliminar tensiones innecesarias y promover un ambiente más armonioso y justo para todos.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <h2>¿Quiénes somos?</h2>
+                <p>SplitEasy es un proyecto desarrollado por <strong>ChabeCode</strong>, un equipo de estudiantes de la
+                    Universidad Peruana de Ciencias Aplicadas (UPC) comprometidos con ofrecer soluciones digitales que
+                    promuevan la equidad y el bienestar en la vida cotidiana. Nuestro enfoque combina la tecnología con
+                    la
+                    empatía social para resolver problemas reales que afectan a miles de hogares.</p>
+
+                <p>Con SplitEasy, queremos transformar la forma en que las personas manejan los gastos compartidos,
+                    ofreciendo una plataforma simple, intuitiva y justa que se adapta a las necesidades de cada hogar.
+                    Sabemos que el manejo financiero puede generar tensiones, especialmente cuando los ingresos son
+                    distintos, y por eso diseñamos una herramienta que distribuya los gastos de forma proporcional y
+                    transparente.</p>
+
+                <p>En <strong>ChabeCode</strong>, creemos que una buena convivencia empieza con una buena organización
+                    financiera. Y SplitEasy está aquí para lograrlo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios Section-->
+    <section class="container mt-5" id="servicios">
+        <h1 class="text-center mb-4">Servicios</h1>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card card-dark h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-calculator display-4 mb-3"></i>
+                        <h2 class="card-title">Cálculo Proporcional</h2>
+                        <p class="card-text">Divide automáticamente los gastos según los ingresos de cada miembro del
+                            hogar, promoviendo la equidad.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-dark h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-pie-chart-fill display-4 mb-3"></i>
+                        <h2 class="card-title">Seguimiento de Gastos</h2>
+                        <p class="card-text">Visualiza fácilmente cuánto has aportado y en qué se gasta el dinero del
+                            hogar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-dark h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-people-fill display-4 mb-3"></i>
+                        <h2 class="card-title">Transparencia y Colaboración</h2>
+                        <p class="card-text">Fomenta la comunicación y acuerdos justos entre los miembros del hogar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ComoFunciona Section -->
+    <section class="container mt-5" id="comofunciona">
+        <h1 class="text-center mb-4">¿Cómo Funciona?</h1>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card card-dark h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-person-plus-fill display-4 mb-3"></i>
+                        <h2 class="card-title">Regístrate</h2>
+                        <p class="card-text">Crea tu cuenta en minutos y accede desde cualquier dispositivo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-dark h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-house-fill display-4 mb-3"></i>
+                        <h2 class="card-title">Crea tu hogar</h2>
+                        <p class="card-text">Añade a los miembros y define tu grupo familiar o compartido.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-dark h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-cash-coin display-4 mb-3"></i>
+                        <h2 class="card-title">Asigna aportes</h2>
+                        <p class="card-text">Define cuánto aporta cada uno según su ingreso mensual.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card card-dark h-100 text-center">
+                    <div class="card-body">
+                        <i class="bi bi-bar-chart-fill display-4 mb-3"></i>
+                        <h2 class="card-title">Controla tus finanzas</h2>
+                        <p class="card-text">Visualiza gastos, balances y alertas de forma sencilla.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Precios Section -->
+    <section class="container my-5" id="precios">
+        <h1 class="text-center mb-4">Precios</h1>
+        <div class="row justify-content-center g-4">
+            <!-- Plan Free -->
+            <div class="col-md-5 d-flex">
+                <div class="card text-center precio-card w-100 bg-black text-white border-white">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h2 class="card-title">Free</h2>
+                            <h3 class="card-subtitle text-white">S/ 0.00 / mes</h3>
+                            <ul class="list-unstyled mt-5 mb-4">
+                                <li>✓ 1 hogar</li>
+                                <li>✓ Hasta 3 miembros</li>
+                                <li>✓ Registro básico de gastos</li>
+                                <li style="opacity: 0">
+                            </ul>
+                        </div>
+                        <a href="#" class="btn btn-outline-light rounded-pill mt-5">Empieza gratis</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Plan Premium -->
+            <div class="col-md-5 d-flex">
+                <div class="card text-center precio-card w-100 bg-black text-white border-white">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h2 class="card-title">Premium</h2>
+                            <h3 class="card-subtitle mb-2 text-light">S/ 9.90 / mes</h3>
+                            <ul class="list-unstyled mt-5 mb-4">
+                                <li>✓ Hogares ilimitados</li>
+                                <li>✓ Miembros ilimitados</li>
+                                <li>✓ Visualización gráfica</li>
+                                <li>✓ Notificaciones inteligentes</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn btn-outline-light rounded-pill mt-auto">Elegir Premium</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reseñas Section -->
+    <section class="container my-5" id="reseñas">
+        <h1 class="text-center mb-5">Reseñas</h1>
+        <div class="row g-4 justify-content-center">
+            <!-- Reseña 1 -->
+            <div class="col-lg-4 col-md-6 d-flex">
+                <div class="card p-4 bg-black text-white border-white w-100 rounded-4 shadow-lg">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="/images/random1.jpeg" alt="María López" class="rounded-circle me-4" width="80"
+                            height="80">
+                        <div>
+                            <h2 class="mb-1 fs-4">María López</h2>
+                            <small class="text-secondary fs-6">Diseñadora Gráfica</small><br>
+                            <span class="text-warning fs-5">★★★★★</span>
+                        </div>
+                    </div>
+                    <p class="fs-5">"SplitEasy me ha ayudado muchísimo a dividir los gastos con mis roomies. ¡Todo está
+                        claro y nadie discute ya!"</p>
+                </div>
+            </div>
+            <!-- Reseña 2 -->
+            <div class="col-lg-4 col-md-6 d-flex">
+                <div class="card p-4 bg-black text-white border-white w-100 rounded-4 shadow-lg">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="/images/random2.jpg" alt="Carlos Fernández" class="rounded-circle me-4" width="80"
+                            height="80">
+                        <div>
+                            <h2 class="mb-1 fs-4">Carlos Fernández</h2>
+                            <small class="text-secondary fs-6">Estudiante de Ingeniería</small><br>
+                            <span class="text-warning fs-5">★★★★★</span>
+                        </div>
+                    </div>
+                    <p class="fs-5">"La aplicación hace que compartir gastos en mi departamento sea súper fácil. Muy
+                        recomendable."</p>
+                </div>
+            </div>
+            <!-- Reseña 3 -->
+            <div class="col-lg-4 col-md-6 d-flex">
+                <div class="card p-4 bg-black text-white border-white w-100 rounded-4 shadow-lg">
+                    <div class="d-flex align-items-center mb-4">
+                        <img src="/images/random3.jpg" alt="José Ramírez" class="rounded-circle me-4" width="80"
+                            height="80">
+                        <div>
+                            <h2 class="mb-1 fs-4">José Ramírez</h2>
+                            <small class="text-secondary fs-6">Padre de Familia</small><br>
+                            <span class="text-warning fs-5">★★★★☆</span>
+                        </div>
+                    </div>
+                    <p class="fs-5">"Gracias a SplitEasy, puedo ver cuánto aporta cada miembro de mi familia. ¡Es justo
+                        y fácil de usar!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section-->
+    <section class="container my-5" id="contactanos">
+        <h1 class="text-center mb-4">Contáctanos</h1>
+        <div class="row">
+            <!-- Mapa -->
+            <div class="col-md-6 mb-4 mb-md-0">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.118283054894!2d-76.96548598909544!3d-12.104054188087764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c70ab77498c1%3A0xcce9f50642e7c684!2sUniversidad%20Peruana%20de%20Ciencias%20Aplicadas!5e0!3m2!1ses-419!2spe!4v1744761111521!5m2!1ses-419!2spe" 
+                width="100%" 
+                height="350" 
+                style="border:0; border-radius: 12px;" 
+                allowfullscreen="" 
+                loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- Formulario -->
+            <div class="col-md-6">
+                <form id="formContacto">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="correo" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="numero" class="form-label">Número</label>
+                        <input type="tel" class="form-control" id="numero" required>
+                    </div>
+                    <button type="submit" class="btn btn-outline-light rounded-pill w-100">Contáctanos</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-white pt-5 pb-0 mt-5">
+        <div class="container">
+            <!-- Línea blanca que separa el footer -->
+            <hr class="border-top border-white opacity-100">
+    
+            <div class="row text-center text-md-start">
+                <!-- Redes sociales -->
+                <div class="col-md-4 mb-4">
+                    <h5>Síguenos</h5>
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-linkedin fs-4"></i></a>
+                        <a href="mailto:contacto@spliteasy.com" class="text-white"><i class="bi bi-envelope-fill fs-4"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Enlaces legales -->
+                <div class="col-md-4 mb-4">
+                    <h5>Información legal</h5>
+                    <ul class="list-unstyled mt-3">
+                        <li><a href="#" class="text-white text-decoration-none">Aviso legal</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Política de privacidad</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Política de cookies</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Soporte -->
+                <div class="col-md-4 mb-4">
+                    <h5>Soporte</h5>
+                    <ul class="list-unstyled mt-3">
+                        <li><a href="mailto:soporte@spliteasy.com" class="text-white text-decoration-none">Contacto con soporte</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Centro de ayuda</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="bg-secundary text-center py-3 mt-4">
+            <p class="mb-0 text-white">&copy; 2025 <strong>SplitEasy</strong>. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+    <!-- Boostrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>
