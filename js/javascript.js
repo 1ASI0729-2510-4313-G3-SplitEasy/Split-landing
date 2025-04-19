@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const correo = document.getElementById("correo").value;
             const numero = document.getElementById("numero").value;
 
-            alert(`Gracias por contactarnos, ${nombre}!\nTe responderemos al correo: ${correo}.`);
+            alert(`Thanks for contacting us, ${nombre}!\n We will reply to your email: ${correo}.`);
         });
     }
 });
