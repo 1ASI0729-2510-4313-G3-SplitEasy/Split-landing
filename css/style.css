@@ -17,7 +17,8 @@
 body {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400; /* Puedes cambiar a 300, 500, etc. según necesites */
+    font-weight: 400;
+    /* Puedes cambiar a 300, 500, etc. según necesites */
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
@@ -26,7 +27,8 @@ body {
     background-color: var(--first-color) !important;
     border-color: var(--first-color) !important;
     color: #fff !important;
-    padding: 1rem 2rem; /* Padding de 1 rem vertical y 2 rem horizontal */
+    padding: 1rem 2rem;
+    /* Padding de 1 rem vertical y 2 rem horizontal */
 }
 
 .btn-outline-light:hover {
@@ -50,25 +52,29 @@ body {
 }
 
 .container {
-    padding: 2rem; /* Padding general de 2rem */
+    padding: 2rem;
+    /* Padding general de 2rem */
 }
 
 .container h1 {
     color: var(--first-color);
     font-size: 3em;
-    margin-bottom: 1rem; /* Margin entre texto */
+    margin-bottom: 1rem;
+    /* Margin entre texto */
 }
 
 .container h2 {
     color: var(--second-color);
     font-size: 2em;
-    margin-bottom: 1rem; /* Margin entre texto */
+    margin-bottom: 1rem;
+    /* Margin entre texto */
 }
 
 .container p {
     color: white;
     font-size: 1em;
-    margin-bottom: 1rem; /* Margin entre texto */
+    margin-bottom: 1rem;
+    /* Margin entre texto */
 }
 
 .form-label {
@@ -109,7 +115,8 @@ body {
     background-color: var(--first-color);
     color: white;
     font-size: 14px;
-    padding: 1rem 2rem; /* Padding de 1 rem vertical y 2 rem horizontal */
+    padding: 1rem 2rem;
+    /* Padding de 1 rem vertical y 2 rem horizontal */
     border-radius: 50px;
     text-decoration: none;
     transition: 0.3s background-color;
@@ -119,7 +126,7 @@ body {
     background-color: var(--second-color);
 }
 
-.login-section{
+.login-section {
     padding-top: 100px;
     min-height: 100vh;
 }
@@ -148,7 +155,8 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.navbar-toggler:focus, .btn-close:focus {
+.navbar-toggler:focus,
+.btn-close:focus {
     box-shadow: none;
     outline: none;
 }
@@ -159,7 +167,8 @@ body {
     position: relative;
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: var(--second-color);
 }
 
@@ -168,7 +177,8 @@ body {
     padding: 6rem;
     height: 100%;
     transition: transform 0.3s ease-in-out;
-    margin-bottom: 1.5rem; /* Margin entre elementos */
+    margin-bottom: 1.5rem;
+    /* Margin entre elementos */
 }
 
 .precio-card:hover {
@@ -179,7 +189,8 @@ body {
     background-color: var(--first-color);
     color: white;
     font-size: 30px;
-    padding: 1rem 2rem; /* Padding de 1 rem vertical y 2 rem horizontal */
+    padding: 1rem 2rem;
+    /* Padding de 1 rem vertical y 2 rem horizontal */
     border-radius: 50px;
     text-decoration: none;
     transition: 0.3s background-color;
@@ -197,15 +208,31 @@ body {
     color: black;
 }
 
+.video-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    /* Mantiene proporción de video widescreen */
+    background-color: #000;
+    /* Por si el video no carga */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ajusta el contenido manteniendo la proporción */
+    display: block;
+    border: none;
+}
+
+
 /* ** Media Queries ** */
 
-@media (min-width: 576px) { 
+@media (min-width: 576px) {}
 
-}
-
-@media (min-width: 768px) {
-
-}
+@media (min-width: 768px) {}
 
 @media (min-width: 992px) {
     .nav-link::before {
@@ -221,16 +248,13 @@ body {
         transition: 0.3s ease-in-out;
     }
 
-    .nav-link:hover::before, .nav-link.active::before {
+    .nav-link:hover::before,
+    .nav-link.active::before {
         width: 100%;
         visibility: visible;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) {}
 
-}
-
-@media (min-width: 1400px) {
-
-}
+@media (min-width: 1400px) {}
